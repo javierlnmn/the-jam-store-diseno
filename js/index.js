@@ -2,7 +2,7 @@
 
 let anchoPagina = window.innerWidth;
 
-$(window).resize(function () { 
+$(window).resize(function () {
     anchoPagina = window.innerWidth;
     if (anchoPagina <= 480 && $('#cabecera').hasClass('cabecera-onScroll')) {
         $('#cabecera').removeClass('cabecera-onScroll');
@@ -78,3 +78,16 @@ function letterAnimation(el, cls) {
     );
     el.addEventListener('mouseout', (event) => el.animation.reverse());
 }
+
+
+// Desplegar el modal de busqueda
+
+let modal = $('#modal-busqueda');
+
+$('#boton-busqueda').click(function () {
+    modal.show();
+});
+
+$('#boton-cerrar-modal').click(function () {
+    modal.hide();
+});
