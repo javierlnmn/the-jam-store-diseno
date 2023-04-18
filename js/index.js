@@ -73,7 +73,6 @@ function letterAnimation(el, cls) {
     el.addEventListener('mouseenter', (event) => {
 
         event.currentTarget.animation.play();
-        console.log(event.currentTarget.animation);
 
     }
     );
