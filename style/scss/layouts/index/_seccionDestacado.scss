@@ -1,0 +1,29 @@
+.seccion-destacado {
+
+    .seccion-destacado_fondo {
+        background-image: url('./../../media/img/airmaxpulse.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:  center;
+
+        .titulo {
+            opacity: 70%;
+            text-shadow: $sombra;
+            font-size: 6vw;
+            transition: opacity .3s ease;
+            cursor: default;
+
+            &:hover {
+                opacity: 100%;
+            }
+    
+            @include desktop {
+                font-size: 7rem;
+            }
+    
+            @include telefono {
+                font-size: 5rem;
+            }
+        }
+    }
+}

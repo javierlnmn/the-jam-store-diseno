@@ -1,0 +1,48 @@
+.cabecera {
+    .navegacion-secundaria {
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        a {
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+        }
+
+        .carrito {
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            border: 1px solid $negro;
+            border-radius: 5px;
+
+            a {
+                display: grid;
+                place-items: center;
+            }
+
+            svg {
+                width: 4rem;
+            }
+
+            .carrito--productos {
+                margin: 0;
+                color: $blanco;
+                background-color: $negro;
+                border-radius: 0 0.3rem 0.3rem 0;
+                height: fit-content;
+                font-weight: 600;
+                padding: 0 .7rem;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+        }
+
+    }
+}

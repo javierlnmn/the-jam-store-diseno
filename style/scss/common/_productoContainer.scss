@@ -1,0 +1,39 @@
+.producto-display {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    gap: 1rem;
+    border: 1px solid darken($blanco, 8%);
+    border-radius: 5px;
+    padding-bottom: 2rem;
+
+    .marcador-oferta {
+        position: absolute;
+        z-index: 0;
+        padding: .1rem .3rem;
+        margin: 1rem;
+        background-color: $amarillo;
+        border-radius: .2rem;
+        color: $blanco;
+        font-size: 1.5rem;
+        font-weight: $bold;
+    }
+
+    img {
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 5px 5px 0 0;
+    }
+
+    h4, a, p {
+        padding: 0 2rem;
+    }
+
+    h4, p {
+        margin: 0;
+    } 
+
+    .enlace {
+        margin: auto 0 0 auto;
+    }
+}

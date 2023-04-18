@@ -1,0 +1,17 @@
+.display-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+
+    @include desktop {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include telefono {
+        grid-template-columns: auto;
+    }
+}

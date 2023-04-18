@@ -1,0 +1,50 @@
+.contenedor {
+    width: 95%;
+    max-width: 140rem;
+    margin: 0 auto;
+}
+
+.negrita {
+    font-weight: $bold;
+}
+
+.titulo {
+    font-weight: $black;
+    font-size: 4.2rem;
+    text-align: center;
+    color: $negro;
+    text-transform: uppercase;
+}
+
+.titulo-secundario {
+    font-weight: $extra-bold;
+    color: $negro;
+    text-align: left;
+    text-transform: uppercase;
+    
+    @include tablet {
+        text-align: center ;
+    }
+}
+
+.texto-izquierda {
+    text-align: left;
+}
+
+.texto-derecha {
+    text-align: right;
+}
+
+.texto-centrado {
+    text-align: center;
+}
+
+.enlace {
+    color: $negro;
+    @include estilo-enlace;
+}
+
+.enlace_blanco {
+    color: $blanco;
+    @include estilo-enlace;
+}

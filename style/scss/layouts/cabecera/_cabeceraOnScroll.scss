@@ -1,0 +1,37 @@
+.cabecera-onScroll {
+    background-color: $negro;
+    box-shadow: $sombra;
+
+    .navegacion-principal .opcion-menu {
+        a {
+            color: $blanco;
+        }
+
+        .enlace-busqueda svg {
+            stroke: $blanco;
+        }
+    }
+
+    .navegacion-secundaria {
+
+        .carrito {
+
+            border-color: $blanco;
+
+            a svg path {
+                fill: $blanco;
+            }
+
+            .carrito--productos {
+                color: $negro;
+                background-color: $blanco;
+            }
+
+        }
+
+        a svg {
+            fill: $blanco;
+        }
+
+    }
+}

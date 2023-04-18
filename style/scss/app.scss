@@ -1,0 +1,24 @@
+/** Base **/
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globales';
+
+/** Common **/
+@import 'common/utils';
+@import 'common/displayProductos';
+@import 'common/productoContainer';
+
+/** Layouts **/
+@import 'layouts/cabecera/cabecera';
+@import 'layouts/cabecera/logoCabecera';
+@import 'layouts/cabecera/navegacionPrincipal';
+@import 'layouts/cabecera/navegacionSecundaria';
+@import 'layouts/cabecera/cabeceraOnScroll';
+
+/** Index **/
+@import 'layouts/index/seccionVideo';
+@import 'layouts/index/seccionDestacado';
+@import 'layouts/index/seccionGarantias';
+
+/** Footer **/
+@import 'layouts/piePagina/piePagina';
