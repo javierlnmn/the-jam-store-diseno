@@ -1,13 +1,31 @@
 .seccion-garantias {
-    min-height: 60rem;
-    background-image: url('./../../media/img/jordan1-fondo.webp');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 
     .titulo span {
-
         color: $azul;
+    }
+
+    .contenedor-garantias {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5rem;
+
+        .garantia {
+
+            .titulo-secundario {
+                font-weight: $regular-bold;
+                text-align: center;
+
+                span {
+                    font-weight: $extra-bold;
+                    color: $amarillo;
+                }
+            }
+
+            p {
+                text-align: justify;
+            }
+
+        }
 
     }
 }
