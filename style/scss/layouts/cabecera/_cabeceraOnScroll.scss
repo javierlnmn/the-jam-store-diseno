@@ -5,6 +5,7 @@
     .navegacion-principal .opcion-menu {
         a {
             color: $blanco;
+            @include estilo-enlace;
         }
 
         .enlace-busqueda svg {

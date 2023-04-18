@@ -40,11 +40,5 @@
 }
 
 .enlace {
-    color: $negro;
-    @include estilo-enlace;
-}
-
-.enlace_blanco {
-    color: $blanco;
     @include estilo-enlace;
 }
