@@ -35,4 +35,12 @@
         }
 
     }
+
+    .logo-animado {
+        color: $amarillo;
+        .logo-animado__caracter-interior:after {
+            color: $azul;
+        }
+    }
+
 }
