@@ -70,6 +70,12 @@ function letterAnimation(el, cls) {
         ease: Power4.easeOut
     }, stagger);
 
-    el.addEventListener('mouseenter', (event) => event.currentTarget.animation.play());
+    el.addEventListener('mouseenter', (event) => {
+
+        event.currentTarget.animation.play();
+        console.log(event.currentTarget.animation);
+
+    }
+    );
     el.addEventListener('mouseout', (event) => el.animation.reverse());
 }
