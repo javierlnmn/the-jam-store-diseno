@@ -1,0 +1,71 @@
+.modal .modal-busqueda-contenido {
+
+    background-color: $blanco;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 65%;
+    border-radius: 10px;
+
+    @include telefono {
+        width: 90%;
+
+        .cuadro-busqueda svg {
+            display: none;
+        }
+
+        .cuadro-busqueda input {
+            min-width: 0;
+        }
+    }
+
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .cuadro-busqueda {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+
+        input {
+            border-radius: 5px;
+            border: 1px solid lighten($gris, 10%);
+            outline: none;
+            padding: 10px 15px;
+            flex: 1;
+            margin-right: 10px;
+            transition: box-shadow .3s ease;
+
+            &:focus {
+                box-shadow: $sombra;
+            }
+        }
+    }
+
+    .titulo-secundario {
+        margin-bottom: .5rem;
+    }
+
+    @include display-productos(3, 2rem) {
+        @include desktop {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include tablet {
+            grid-template-columns: auto;
+        }
+    }
+
+}
