@@ -33,6 +33,7 @@
         margin: 0;
     } 
 
+    @include estilo-enlace($negro);
     .enlace {
         margin: auto 0 0 auto;
     }

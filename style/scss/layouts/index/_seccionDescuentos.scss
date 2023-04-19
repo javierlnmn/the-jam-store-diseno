@@ -1,0 +1,5 @@
+.seccion-descuentos {
+    .display-productos {
+        @include display-productos(4, 3rem);
+    }
+}

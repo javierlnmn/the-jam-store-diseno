@@ -86,8 +86,14 @@ let modal = $('#modal-busqueda');
 
 $('#boton-busqueda').click(function () {
     modal.show();
+    $('body').css('overflow', 'hidden');
 });
 
 $('#boton-cerrar-modal').click(function () {
     modal.hide();
+    $('body').css('overflow', 'auto');
+});
+
+$(document).keydown(function(event) {
+    if (event.keyCode == 27) /* 27 == ESC */ modal.hide();
 });

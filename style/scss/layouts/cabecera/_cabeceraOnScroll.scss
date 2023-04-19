@@ -3,10 +3,7 @@
     box-shadow: $sombra;
 
     .navegacion-principal .opcion-menu {
-        a {
-            color: $blanco;
-            @include estilo-enlace;
-        }
+        @include estilo-enlace($blanco);
 
         .enlace-busqueda svg {
             stroke: $blanco;

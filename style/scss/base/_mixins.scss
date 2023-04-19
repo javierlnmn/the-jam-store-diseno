@@ -20,16 +20,13 @@
 
 /** Otros **/
 
-@mixin grid($columnas, $espaciado ) {
-    display: grid;
-    gap: $espaciado;
-    grid-template-columns: repeat($columnas, 1fr);
-}
-
-@mixin estilo-enlace {
-    transition: color .3s ease;
-    font-weight: $regular-bold;
-    &:hover {
-        color: $azul;
+@mixin estilo-enlace($color) {
+    .enlace {
+        color: $color;
+        transition: color .3s ease;
+        font-weight: $regular-bold;
+        &:hover {
+            color: $azul;
+        }
     }
 }

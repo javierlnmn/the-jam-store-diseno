@@ -22,16 +22,16 @@
         <nav>
             <ul class="navegacion-principal">
                 <li class="opcion-menu">
-                    <a href="#">Upperwear</a>
+                    <a class="enlace" href="#">Upperwear</a>
                 </li>
                 <li class="opcion-menu">
-                    <a href="#">Underwear</a>
+                    <a class="enlace" href="#">Underwear</a>
                 </li>
                 <li class="opcion-menu">
-                    <a href="#">Sneakers</a>
+                    <a class="enlace" href="#">Sneakers</a>
                 </li>
                 <li class="opcion-menu">
-                    <a href="#">Accesorios</a>
+                    <a class="enlace" href="#">Accesorios</a>
                 </li>
             </ul>
         </nav>
@@ -80,12 +80,12 @@
 
             <video autoplay muted loop>
                 <source src="media/vid/video-fondo.webm" type="video/webm">
- 
+
             </video>
 
         </section>
 
-        <section class="contenedor">
+        <section class="contenedor seccion-descuentos">
 
             <h2 class="titulo-secundario">Descuentos semanales</h2>
 
@@ -182,25 +182,43 @@
                     </li>
                 </ul>
             </div>
-    
+
             <div class="navegacion">
                 <h4>Redes Sociales</h4>
-                <ul>
+                <ul class="redes-sociales">
                     <li>
-                        <a class="enlace" href="#">Upperwear</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#b1b1b1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <rect x="4" y="4" width="16" height="16" rx="4" />
+                            <circle cx="12" cy="12" r="3" />
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                          </svg>
+                        <a class="enlace" href="#">Instagram</a>
                     </li>
                     <li>
-                        <a class="enlace" href="#">Underwear</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#b1b1b1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
+                          </svg>
+                        <a class="enlace" href="#">TikTok</a>
                     </li>
                     <li>
-                        <a class="enlace" href="#">Sneakers</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#b1b1b1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                          </svg>
+                        <a class="enlace" href="#">Facebook</a>
                     </li>
                     <li>
-                        <a class="enlace" href="#">Accesorios</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#b1b1b1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                          </svg>
+                        <a class="enlace" href="#">Twitter</a>
                     </li>
                 </ul>
             </div>
-            
+
             <div class="otros seccion-doble">
                 <h4>Acerca de</h4>
                 <ul>
@@ -218,16 +236,19 @@
                     </li>
                 </ul>
             </div>
-    
+
             <p class="texto-derechos-reservados">The Jam Shop 2023 &copy; Todos los derechos reservados</p>
-    
+
         </div>
-        
+
     </footer>
 
     <div id="modal-busqueda" class="modal">
+
         <div class="modal-contenido">
+
             <span id="boton-cerrar-modal" class="close">&times;</span>
+
             <div class="cuadro-busqueda">
                 <svg width="24" height="24" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -236,33 +257,39 @@
                 </svg>
                 <input type="text" placeholder="Escribe algo para buscar...">
             </div>
-            <div class="lista-productos">
-                <div class="producto">
-                    <img src="media/img/baggy-jeans.jpg" alt="">
-                    <div class="informacion">
-                        <p>Baggy Jeans</p>
-                        <p class="precio">18.00€</p>
-                    </div>
-                    <a class="enlace" href="carrito.html">Ver producto</a>
+
+            <h4 class="titulo-secundario">Productos recomendados</h4>
+
+            <div class="display-productos">
+
+                <div class="producto-display">
+                    <span class="marcador-oferta">Oferta</span>
+                    <img src="media/img/pack-anillos.jpg" alt="">
+                    <h4>Pack Anillos</h4>
+                    <p><span class="negrita">14,99</span>€</p>
+                    <a class="enlace" href="articulo.html">Ver producto</a>
                 </div>
-                <div class="producto">
+
+                <div class="producto-display">
+                    <span class="marcador-oferta">Oferta</span>
                     <img src="media/img/camiseta-rip-n-dip.jpg" alt="">
-                    <div class="informacion">
-                        <p>Camiseta Ripndip</p>
-                        <p class="precio"><span class="text-muted text-decoration-line-through">60.00€</span>&nbsp;&nbsp;48.00€</p>
-                    </div>
-                    <a class="enlace" href="carrito.html">Ver producto</a>
+                    <h4>Camiseta Ripndip</h4>
+                    <p><span class="negrita">45,50</span>€</p>
+                    <a class="enlace" href="articulo.html">Ver producto</a>
                 </div>
-                <div class="producto">
-                    <img src="media/img/dunk-sb_heineken.png" alt="">
-                    <div class="informacion">
-                        <p>Nike Dunk SB Heineken</p>
-                        <p class="precio"><span class="text-muted text-decoration-line-through">225.00€</span>&nbsp;&nbsp;140.00€</p>
-                    </div>
-                    <a class="enlace" href="carrito.html">Ver producto</a>
+
+                <div class="producto-display">
+                    <span class="marcador-oferta">Oferta</span>
+                    <img src="media/img/chandal-carhartt.webp" alt="">
+                    <h4>Chandal Carhartt NB</h4>
+                    <p><span class="negrita">56,99</span>€</p>
+                    <a class="enlace" href="articulo.html">Ver producto</a>
                 </div>
+
             </div>
+
         </div>
+
     </div>
 
     <script type="text/javascript" src="js/gsap.min.js"></script>
