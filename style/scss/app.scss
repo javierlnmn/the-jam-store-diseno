@@ -4,13 +4,13 @@
 @import 'base/globales';
 
 /** Common **/
+@import 'common/logoAnimado';
 @import 'common/utils';
 @import 'common/displayProductos';
 @import 'common/productoContainer';
 
 /** Layouts **/
 @import 'layouts/cabecera/cabecera';
-@import 'layouts/cabecera/logoCabecera';
 @import 'layouts/cabecera/navegacionPrincipal';
 @import 'layouts/cabecera/navegacionSecundaria';
 @import 'layouts/cabecera/cabeceraOnScroll';
