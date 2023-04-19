@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Sass para Django</title>
+
+    <link rel="stylesheet" href="style/css/normalize.css">
+    <link rel="stylesheet" href="style/css/app.css">
+</head>
+
+<body>
+
+    <header class="cabecera" id="cabecera">
+
+        <a href="#"> <!-- Link al inicio de la página -->
+            <h3 class="logo-animado">The Jam Shop</h3>
+        </a>
+
+        <nav>
+            <ul class="navegacion-principal">
+                <li class="opcion-menu">
+                    <a class="enlace" href="#">Upperwear</a>
+                </li>
+                <li class="opcion-menu">
+                    <a class="enlace" href="#">Underwear</a>
+                </li>
+                <li class="opcion-menu">
+                    <a class="enlace" href="#">Sneakers</a>
+                </li>
+                <li class="opcion-menu">
+                    <a class="enlace" href="#">Accesorios</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav>
+            <div class="navegacion-secundaria">
+                <a href="#" id="boton-busqueda">
+                    <svg width="24" height="24" viewBox="0 0 12 12" fill="#1C1C1C" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.0667 12L6.86667 7.8C6.53333 8.06667 6.15 8.27778 5.71667 8.43333C5.28333 8.58889 4.82222 8.66667 4.33333 8.66667C3.12222 8.66667 2.09733 8.24733 1.25867 7.40867C0.419556 6.56956 0 5.54444 0 4.33333C0 3.12222 0.419556 2.09711 1.25867 1.258C2.09733 0.419333 3.12222 0 4.33333 0C5.54444 0 6.56956 0.419333 7.40867 1.258C8.24733 2.09711 8.66667 3.12222 8.66667 4.33333C8.66667 4.82222 8.58889 5.28333 8.43333 5.71667C8.27778 6.15 8.06667 6.53333 7.8 6.86667L12 11.0667L11.0667 12ZM4.33333 7.33333C5.16667 7.33333 5.87511 7.04178 6.45867 6.45867C7.04178 5.87511 7.33333 5.16667 7.33333 4.33333C7.33333 3.5 7.04178 2.79156 6.45867 2.208C5.87511 1.62489 5.16667 1.33333 4.33333 1.33333C3.5 1.33333 2.79156 1.62489 2.208 2.208C1.62489 2.79156 1.33333 3.5 1.33333 4.33333C1.33333 5.16667 1.62489 5.87511 2.208 6.45867C2.79156 7.04178 3.5 7.33333 4.33333 7.33333Z" />
+                    </svg>
+                </a>
+                <a href="#" class="carrito">
+                    <svg width="24" height="24" viewBox="0 0 15 14" fill="#1C1C1C" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.9937 3.0875L13.2312 7.26875C13.1683 7.61415 12.9863 7.92655 12.7168 8.15153C12.4472 8.37652 12.1073 8.49983 11.7563 8.5H4.50625L4.78125 10H11.5C11.7967 10 12.0867 10.088 12.3334 10.2528C12.58 10.4176 12.7723 10.6519 12.8858 10.926C12.9994 11.2001 13.0291 11.5017 12.9712 11.7926C12.9133 12.0836 12.7704 12.3509 12.5607 12.5607C12.3509 12.7704 12.0836 12.9133 11.7926 12.9712C11.5017 13.0291 11.2001 12.9994 10.926 12.8858C10.6519 12.7723 10.4176 12.58 10.2528 12.3334C10.088 12.0867 10 11.7967 10 11.5C10.0001 11.3295 10.0297 11.1604 10.0875 11H6.4125C6.47034 11.1604 6.49995 11.3295 6.5 11.5C6.50045 11.742 6.44234 11.9805 6.33062 12.1952C6.2189 12.4099 6.05689 12.5944 5.85843 12.7329C5.65996 12.8714 5.43093 12.9598 5.19088 12.9906C4.95084 13.0214 4.7069 12.9937 4.4799 12.9097C4.2529 12.8258 4.04957 12.6882 3.88728 12.5087C3.72498 12.3292 3.60854 12.113 3.54788 11.8787C3.48722 11.6445 3.48416 11.399 3.53894 11.1632C3.59373 10.9275 3.70474 10.7085 3.8625 10.525L2.13125 1H1C0.867392 1 0.740215 0.947322 0.646447 0.853553C0.552678 0.759785 0.5 0.632608 0.5 0.5C0.5 0.367392 0.552678 0.240215 0.646447 0.146447C0.740215 0.0526784 0.867392 0 1 0H2.13125C2.36465 0.000510561 2.59052 0.082646 2.76973 0.232177C2.94894 0.381709 3.0702 0.589216 3.1125 0.81875L3.41875 2.5H13.5C13.573 2.50015 13.645 2.51649 13.711 2.54783C13.7769 2.57917 13.8351 2.62474 13.8813 2.68125C13.9296 2.73599 13.9649 2.80102 13.9843 2.8714C14.0038 2.94179 14.0071 3.01569 13.9937 3.0875Z" />
+                    </svg>
+                    <span class="carrito-numero-productos">5</span>
+                </a>
+                <a href="#">
+                    <svg width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1C1C1C" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                    </svg>
+                </a>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+
+    </main>
+
+    <footer class="pie-pagina">
+
+        <div class="contenedor contenedor-footer">
+
+            <div class="navegacion">
+                <h4>Navegación</h4>
+                <ul>
+                    <li>
+                        <a class="enlace" href="#">Upperwear</a>
+                    </li>
+                    <li>
+                        <a class="enlace" href="#">Underwear</a>
+                    </li>
+                    <li>
+                        <a class="enlace" href="#">Sneakers</a>
+                    </li>
+                    <li>
+                        <a class="enlace" href="#">Accesorios</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navegacion">
+                <h4>Redes Sociales</h4>
+                <ul class="redes-sociales">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+                            width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#b1b1b1" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="4" y="4" width="16" height="16" rx="4" />
+                            <circle cx="12" cy="12" r="3" />
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                        </svg>
+                        <a class="enlace" href="#">Instagram</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok"
+                            width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#b1b1b1" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
+                        </svg>
+                        <a class="enlace" href="#">TikTok</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
+                            width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#b1b1b1" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                        </svg>
+                        <a class="enlace" href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter"
+                            width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#b1b1b1" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                        </svg>
+                        <a class="enlace" href="#">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="otros seccion-doble">
+                <h4>Acerca de</h4>
+                <p class="cookies">Utilizamos cookies para mejorar tu experiencia en nuestra tienda online. Las cookies
+                    son pequeños
+                    archivos de texto que se almacenan en tu ordenador o dispositivo móvil cuando visitas nuestra web.
+                    Estas cookies nos permiten recordar tus preferencias, como el idioma y la moneda que utilizas, para
+                    que no tengas que seleccionarlos de nuevo cada vez que accedas a nuestra página.
+                    <br><br>
+                    Además, las cookies nos ayudan a entender cómo utilizas nuestra tienda online, lo que nos permite
+                    mejorar la navegación y los servicios que ofrecemos. Por ejemplo, utilizamos cookies para recopilar
+                    información sobre cómo utilizas nuestra web y qué productos te interesan, de forma que podamos
+                    ofrecerte contenido personalizado y recomendaciones de productos que puedan ser de tu interés.
+                    <br><br>
+                    También utilizamos cookies de terceros, como Google Analytics y redes sociales, para analizar el
+                    tráfico de nuestra web y mejorar nuestra presencia en línea. Estas cookies pueden recopilar
+                    información sobre tus hábitos de navegación y ofrecerte anuncios personalizados en función de tus
+                    intereses.
+                    <br><br>
+
+                    Si no estás de acuerdo con el uso de cookies, puedes configurar tu navegador para que no las acepte
+                    o eliminarlas directamente desde tu ordenador o dispositivo móvil. Sin embargo, debes tener en
+                    cuenta que algunas funciones de nuestra tienda online podrían no funcionar correctamente si
+                    desactivas las cookies.
+                    <br><br>
+
+                    Al seguir navegando por nuestra web, aceptas el uso de cookies de acuerdo con nuestra política de
+                    cookies. ¡Gracias por confiar en nosotros y disfruta de tu experiencia de compra en nuestra tienda
+                    online!
+                </p>
+            </div>
+
+            <p class="texto-derechos-reservados"><a href="#"><span class="logo-animado">The Jam Shop 2023</span></a>
+                &copy; Todos los derechos reservados</p>
+
+        </div>
+
+    </footer>
+
+    <div id="modal-busqueda" class="modal">
+
+        <div class="modal-busqueda-contenido">
+
+            <span id="boton-cerrar-modal" class="close">&times;</span>
+
+            <div class="cuadro-busqueda">
+                <svg width="24" height="24" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.0667 12L6.86667 7.8C6.53333 8.06667 6.15 8.27778 5.71667 8.43333C5.28333 8.58889 4.82222 8.66667 4.33333 8.66667C3.12222 8.66667 2.09733 8.24733 1.25867 7.40867C0.419556 6.56956 0 5.54444 0 4.33333C0 3.12222 0.419556 2.09711 1.25867 1.258C2.09733 0.419333 3.12222 0 4.33333 0C5.54444 0 6.56956 0.419333 7.40867 1.258C8.24733 2.09711 8.66667 3.12222 8.66667 4.33333C8.66667 4.82222 8.58889 5.28333 8.43333 5.71667C8.27778 6.15 8.06667 6.53333 7.8 6.86667L12 11.0667L11.0667 12ZM4.33333 7.33333C5.16667 7.33333 5.87511 7.04178 6.45867 6.45867C7.04178 5.87511 7.33333 5.16667 7.33333 4.33333C7.33333 3.5 7.04178 2.79156 6.45867 2.208C5.87511 1.62489 5.16667 1.33333 4.33333 1.33333C3.5 1.33333 2.79156 1.62489 2.208 2.208C1.62489 2.79156 1.33333 3.5 1.33333 4.33333C1.33333 5.16667 1.62489 5.87511 2.208 6.45867C2.79156 7.04178 3.5 7.33333 4.33333 7.33333Z"
+                        fill="#1C1C1C" />
+                </svg>
+                <input type="text" placeholder="Escribe algo para buscar...">
+            </div>
+
+            <h3 class="titulo-secundario">Productos recomendados</h3>
+
+            <div class="display-productos">
+
+                <div class="producto-display">
+                    <span class="marcador-oferta">Oferta</span>
+                    <img src="media/img/pack-anillos.jpg" alt="">
+                    <h4>Pack Anillos</h4>
+                    <p><span class="negrita">14,99</span>€</p>
+                    <a class="enlace" href="articulo.html">Ver producto</a>
+                </div>
+
+                <div class="producto-display">
+                    <span class="marcador-oferta">Oferta</span>
+                    <img src="media/img/camiseta-rip-n-dip.jpg" alt="">
+                    <h4>Camiseta Ripndip</h4>
+                    <p><span class="negrita">45,50</span>€</p>
+                    <a class="enlace" href="articulo.html">Ver producto</a>
+                </div>
+
+                <div class="producto-display">
+                    <span class="marcador-oferta">Oferta</span>
+                    <img src="media/img/chandal-carhartt.webp" alt="">
+                    <h4>Chandal Carhartt NB</h4>
+                    <p><span class="negrita">56,99</span>€</p>
+                    <a class="enlace" href="articulo.html">Ver producto</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/gsap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>
