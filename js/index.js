@@ -84,16 +84,17 @@ function letterAnimation(el, cls) {
 
 let modal = $('#modal-busqueda');
 
-$('#boton-busqueda').click(function () {
+$('#boton-busqueda').on('click', function () {
     modal.show();
     $('body').css('overflow', 'hidden');
 });
 
-$('#boton-cerrar-modal').click(function () {
+$('#boton-cerrar-modal').on('click', function () {
     modal.hide();
     $('body').css('overflow', 'auto');
 });
 
-$(document).keydown(function(event) {
+$(document).on('keydown',function(event) {
     if (event.keyCode == 27) /* 27 == ESC */ modal.hide();
+    $('body').css('overflow', 'auto');
 });
