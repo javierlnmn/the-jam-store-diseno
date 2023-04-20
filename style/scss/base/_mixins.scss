@@ -29,6 +29,20 @@
             color: $azul;
         }
 
+        &_boton {
+            padding: 1rem 2rem;
+            color: $color;
+            background-color: $blanco;
+            border: 1px solid $color;
+            transition: background-color .3s ease;
+            &:hover {
+                color: $blanco;
+                background-color: $color;
+            }
+            @content
+        }
+
         @content
+        
     }
 }
