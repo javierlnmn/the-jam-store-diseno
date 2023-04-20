@@ -1,0 +1,49 @@
+.seccion-producto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+
+    img {
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            max-width: 60rem;
+            margin: 0 auto;
+        }
+    }
+
+    .precio {
+        color: darken($gris, 20%);
+        font-size: 1.8rem;
+        font-weight: $regular-bold;
+    }
+
+    .botones {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        @include estilo-enlace($negro) {
+            text-align: center;
+        }
+
+        > *  {
+            flex: 1;
+        }
+
+        @include tablet {
+            flex-direction: column;
+            > * {
+                width: 100%;
+            }
+        }
+
+    }
+
+}

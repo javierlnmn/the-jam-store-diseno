@@ -8,6 +8,7 @@
 @import 'common/utils';
 @import 'common/displayProductos';
 @import 'common/productoContainer';
+@import 'common/bannerOndas';
 
 /** Layouts **/
 @import 'layouts/cabecera/cabecera';
@@ -19,6 +20,10 @@
 @import 'layouts/index/seccionDescuentos';
 @import 'layouts/index/seccionDestacado';
 @import 'layouts/index/seccionGarantias';
+
+@import 'layouts/articulo/seccionProducto';
+@import 'layouts/articulo/seccionProductosRecomendados';
+@import 'layouts/articulo/seccionValoraciones';
 
 @import 'layouts/piePagina/piePagina';
 @import 'layouts/piePagina/contenedorPiePagina';
