@@ -11,6 +11,19 @@
 
             .icono {
                 color: $negro;
+                transition: color .3s ease;
+                
+                &:hover {
+                    color: lighten($negro, 20%);
+                }
+            }
+
+            .icono-corazon {
+                color: $rojo;
+
+                &:hover {
+                    color: lighten($rojo, 10%);
+                }
             }
 
             &.carrito .carrito-numero-productos {

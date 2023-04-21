@@ -1,6 +1,6 @@
 .producto-display_card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     border: .1rem solid darken($blanco, 8%);
     border-radius: .5rem;
