@@ -12,23 +12,8 @@
 
     .navegacion-secundaria {
 
-        .carrito {
-
-            border-color: $blanco;
-
-            a svg path {
-                fill: $blanco;
-            }
-
-            .carrito--productos {
-                color: $negro;
-                background-color: $blanco;
-            }
-
-        }
-
-        a svg {
-            fill: $blanco;
+        a .icono {
+            color: $blanco;
         }
 
     }

@@ -9,6 +9,10 @@
             cursor: pointer;
             position: relative;
 
+            .icono {
+                color: $negro;
+            }
+
             &.carrito .carrito-numero-productos {
                 position: absolute;
                 top: -1rem;

@@ -1,7 +1,106 @@
 .seccion-valoraciones {
 
-    @include ondas('valoraciones');
+     @include ondas('valoraciones');
 
-    
+     .contenedor {
+
+          .valoraciones {
+
+               .valoracion {
+
+                    &+.valoracion {
+                         border-top: .1rem solid $gris;
+                    }
+
+                    display: flex;
+                    gap: 3rem;
+                    padding: 2rem 0;
+
+                    .informacion-valoracion {
+                         flex: 1;
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: space-between;
+
+                         .usuario {
+                              display: flex;
+                              flex-direction: row;
+                              align-items: center;
+                              gap: 2rem;
+
+                              p {
+                                   font-weight: 700;
+                                   font-size: 2.4rem;
+
+                              }
+
+                              .foto-perfil {
+                                   max-width: 3.5rem;
+                                   aspect-ratio: 1;
+                                   object-fit: contain;
+                              }
+
+                              .puntuacion {
+                                   display: flex;
+                                   align-items: center;
+                                   gap: 1rem;
+
+                                   img {
+                                        max-width: 2.3rem;
+                                   }
+                              }
+                         }
+
+                         .fecha-publicacion {
+                              color: rgba(0, 0, 0, 0.4);
+                         }
+
+                    }
+
+                    .votacion {
+
+                         display: grid;
+                         place-items: center;
+
+                         img {
+                              max-width: 3.5rem;
+                              cursor: pointer;
+
+                              &:nth-child(1) {
+                                   transform: rotate(90deg);
+                              }
+
+                              &:nth-child(3) {
+                                   transform: rotate(270deg);
+                              }
+                         }
+                    }
+               }
+
+               .ver-mas {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2rem;
+                    padding: 2rem 0;
+
+                    span {
+                         background-color: rgba(0, 0, 0, 0.4);
+                         height: .1rem;
+                         flex: 1;
+                    }
+
+                    p {
+                         color: rgba(0, 0, 0, 0.4);
+                         font-size: 2.2rem;
+                         font-weight: 300;
+                         cursor: pointer;
+                    }
+
+               }
+
+          }
+
+     }
 
 }

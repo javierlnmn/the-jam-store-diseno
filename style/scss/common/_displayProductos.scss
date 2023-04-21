@@ -1,4 +1,4 @@
-@mixin display-productos($columnas, $espaciado ) {
+@mixin display-productos($columnas, $espaciado ) { // Este utiliza mixin para poder elegir cuantas columnas tendra el display
     .display-productos {
         display: grid;
         grid-template-columns: repeat($columnas, 1fr);
