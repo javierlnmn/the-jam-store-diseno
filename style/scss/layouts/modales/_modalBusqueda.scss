@@ -55,16 +55,13 @@
     }
 
     .titulo-secundario {
-        margin-bottom: .5rem;
+        margin-bottom: 1rem;
     }
 
-    @include display-productos(3, 2rem) {
-        @include desktop {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        @include tablet {
-            grid-template-columns: auto;
+    @include display-productos(1, 2rem) {
+        .producto-display_row+.producto-display_row {
+            padding-top: 2rem;
+            border-top: .1rem solid $gris;
         }
     }
 

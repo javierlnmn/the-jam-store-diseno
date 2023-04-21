@@ -3,19 +3,6 @@
         display: grid;
         grid-template-columns: repeat($columnas, 1fr);
         gap: $espaciado;
-    
-        @include desktop {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    
-        @include tablet {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    
-        @include telefono {
-            grid-template-columns: auto;
-        }
-    
         @content;
     }
 }
