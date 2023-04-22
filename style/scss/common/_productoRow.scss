@@ -1,7 +1,11 @@
 .producto-display_row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 2rem;
+    @include tablet {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
 
     .imagen {
         place-self: center;
@@ -16,6 +20,12 @@
             color: $blanco;
             font-size: 1.5rem;
             font-weight: $bold;
+            @include tablet {
+                font-size: 1.3rem;
+            }
+            @include telefono {
+                font-size: 1.2rem;
+            }
         }
 
         img {
@@ -41,6 +51,4 @@
             margin: auto 0 0 auto;
         }
     }
-
-
 }

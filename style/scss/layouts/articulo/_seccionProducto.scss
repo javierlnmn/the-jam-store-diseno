@@ -37,13 +37,23 @@
             text-align: center;
         }
 
-        > *  {
+        > a  {
             flex: 1;
+        }
+
+        .icono-corazon {
+            color: $gris;
+            cursor: pointer;
+        }
+
+        .icono-corazon_activo {
+            color: $rojo;
         }
 
         @include tablet {
             flex-direction: column;
-            > * {
+            align-items: baseline;
+            > a {
                 width: 100%;
             }
         }
