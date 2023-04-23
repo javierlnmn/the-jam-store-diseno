@@ -6,6 +6,7 @@
 /** Common **/
 @import 'common/logoAnimado';
 @import 'common/utils';
+@import 'common/inputNumeroArticulos';
 @import 'common/displayProductos';
 @import 'common/productoCard';
 @import 'common/productoRow';
@@ -25,6 +26,8 @@
 @import 'layouts/articulo/seccionProducto';
 @import 'layouts/articulo/seccionProductosRecomendados';
 @import 'layouts/articulo/seccionValoraciones';
+
+@import 'layouts/listaDeseos/seccionLista';
 
 @import 'layouts/piePagina/piePagina';
 @import 'layouts/piePagina/contenedorPiePagina';

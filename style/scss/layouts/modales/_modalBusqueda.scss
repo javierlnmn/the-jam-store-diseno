@@ -18,6 +18,8 @@
         .cuadro-busqueda input {
             min-width: 0;
         }
+
+        // Cambiar tamaño nombre producto en el responsive
     }
 
     .close {
@@ -59,11 +61,6 @@
         margin-bottom: 1rem;
     }
 
-    @include display-productos(1, 2rem) {
-        .producto-display_row+.producto-display_row {
-            padding-top: 2rem;
-            border-top: .1rem solid $gris;
-        }
-    }
+    @include display-productos(1, 2rem);
 
 }

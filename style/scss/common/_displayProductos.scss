@@ -2,6 +2,14 @@
     .display-productos {
         display: grid;
         grid-template-columns: repeat($columnas, 1fr);
+
+        @if $columnas == 1fr {
+            .producto-display_row+.producto-display_row {
+                padding-top: 2rem;
+                border-top: .1rem solid lighten($gris, 20%);
+            }
+        }
+
         gap: $espaciado;
         @content;
     }

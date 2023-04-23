@@ -98,3 +98,37 @@ $(document).on('keydown', function (event) {
     if (event.keyCode == 27) /* 27 == ESC */ modal.hide();
     $('body').css('overflow', 'auto');
 });
+
+// Funcionalidad input de numero de productos
+
+jQuery('.numero-articulos').each(function () {
+    var spinner = jQuery(this),
+        input = spinner.find('input[type="number"]'),
+        btnUp = spinner.find('.numero-articulos-up'),
+        btnDown = spinner.find('.numero-articulos-down'),
+        min = input.attr('min'),
+        max = input.attr('max');
+
+    btnUp.click(function () {
+        var oldValue = parseFloat(input.val());
+        if (oldValue >= max) {
+            var newVal = oldValue;
+        } else {
+            var newVal = oldValue + 1;
+        }
+        spinner.find("input").val(newVal);
+        spinner.find("input").trigger("change");
+    });
+
+    btnDown.click(function () {
+        var oldValue = parseFloat(input.val());
+        if (oldValue <= min) {
+            var newVal = oldValue;
+        } else {
+            var newVal = oldValue - 1;
+        }
+        spinner.find("input").val(newVal);
+        spinner.find("input").trigger("change");
+    });
+
+});
