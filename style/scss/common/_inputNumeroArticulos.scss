@@ -50,6 +50,10 @@
         -ms-user-select: none;
         -o-user-select: none;
         user-select: none;
+
+        &:hover {
+            background-color: lighten($gris, 20%);
+        }
     }
 
     &-button.numero-articulos-up {
