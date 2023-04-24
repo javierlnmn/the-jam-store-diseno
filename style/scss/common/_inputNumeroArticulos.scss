@@ -9,11 +9,12 @@
     }
 
     input[type=number] {
+        appearance: textfield;
         -moz-appearance: textfield;
     }
 
     input {
-        max-width: 7.5rem;
+        width: 7.5rem;
         height: 4.2rem;
         line-height: 1.65;
         float: left;
