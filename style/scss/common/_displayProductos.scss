@@ -2,6 +2,7 @@
     .display-productos {
         display: grid;
         grid-template-columns: repeat($columnas, 1fr);
+        gap: $espaciado;
 
         @if ($responsive) {
             @include desktop {
@@ -25,7 +26,6 @@
             }
         }
 
-        gap: $espaciado;
         @content;
 
     }

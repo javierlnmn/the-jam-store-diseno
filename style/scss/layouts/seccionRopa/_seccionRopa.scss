@@ -1,7 +1,5 @@
 .seccion-ropa-productos {
 
-    @include display-productos(4, 3rem, true);
-
     .contenedor-ver-mas {
         display: flex;
         align-items: center;
@@ -22,4 +20,6 @@
             margin-bottom: 3rem;
         }
     }
+
+    @include display-productos(4, 3rem, true);
 }
