@@ -47,3 +47,9 @@
 .texto_small {
     font-size: 1.3rem;
 }
+
+.texto-tachado {
+    text-decoration: line-through;
+    color: $gris;
+    font-weight: $delgada;
+}

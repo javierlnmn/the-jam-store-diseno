@@ -1,16 +1,4 @@
 .seccion-productos-recomendados {
     margin-top: 6rem;
-    @include display-productos(4, 3rem) {
-        @include desktop {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    
-        @include tablet {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    
-        @include telefono {
-            grid-template-columns: auto;
-        }
-    };
+    @include display-productos(4, 3rem, true);
 }

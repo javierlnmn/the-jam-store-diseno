@@ -1,0 +1,25 @@
+.seccion-ropa-productos {
+
+    @include display-productos(4, 3rem, true);
+
+    .contenedor-ver-mas {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+
+        span {
+            flex: 1;
+            height: .1rem;
+            background-color: lighten($gris, 20%);
+        }
+
+        @include telefono {
+            span {
+                flex: 0;
+            }
+            flex-direction: column;
+            gap: 0;
+            margin-bottom: 3rem;
+        }
+    }
+}

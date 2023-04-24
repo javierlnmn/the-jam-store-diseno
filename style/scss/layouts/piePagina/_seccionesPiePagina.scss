@@ -1,6 +1,7 @@
 .contenedor-footer {
 
-    .navegacion, .otros {
+    .navegacion,
+    .otros {
 
         h4 {
             font-weight: $bold;
@@ -51,6 +52,17 @@
                     gap: 1rem;
                 }
             }
+        }
+    }
+
+    .otros {
+        .enlace {
+            padding-left: 0;
+        }
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
         }
     }
 }

@@ -21,11 +21,6 @@
         }
     }
 
-    @include display-productos(1, 2rem);
-
-    .producto-display_row {
-        max-width: 110rem;
-        margin: 0 auto;
-    }
+    @include display-productos(1, 2rem, false);
 
 }

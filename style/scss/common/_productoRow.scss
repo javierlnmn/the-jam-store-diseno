@@ -75,15 +75,7 @@
     }
 
     @include desktop {
-        grid-template-columns: repeat(7, 1fr);
-
-        .imagen {
-            grid-column: 1 / 4;
-        }
-
-        .informacion {
-            grid-column: 4 / -1;
-        }
+        grid-template-columns: repeat(2, 1fr);
     }
 
     @include tablet {

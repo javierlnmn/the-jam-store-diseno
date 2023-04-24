@@ -1,7 +1,22 @@
-@mixin display-productos($columnas, $espaciado) { // Este utiliza mixin para poder elegir cuantas columnas tendra el display
+@mixin display-productos($columnas, $espaciado, $responsive) { // Este utiliza mixin para poder elegir cuantas columnas tendra el display
     .display-productos {
         display: grid;
         grid-template-columns: repeat($columnas, 1fr);
+
+        @if ($responsive) {
+            @include desktop {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        
+            @include tablet {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        
+            @include telefono {
+                grid-template-columns: auto;
+            }
+        }
+        
 
         @if $columnas == 1fr {
             .producto-display_row+.producto-display_row {
@@ -12,5 +27,7 @@
 
         gap: $espaciado;
         @content;
+
     }
+    
 }
