@@ -12,6 +12,9 @@
     font-weight: $black;
     color: $negro;
     font-size: 4.2rem;
+    @include telefono {
+        font-size: 3.8rem;
+    }
     text-align: center;
     text-transform: uppercase;
 }
