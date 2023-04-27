@@ -1,0 +1,65 @@
+.contenedor-boton-filtros {
+    display: block;
+    margin: 2rem auto;
+    padding: 4rem 0;
+    border-top: .1rem solid lighten($gris, 10%);
+    border-bottom: .1rem solid lighten($gris, 10%);
+    @include estilo-enlace($negro);
+}
+
+.seccion-filtros {
+    display: block;
+    margin-bottom: 4rem;
+    border-bottom: .1rem solid lighten($gris, 10%);
+    display: none;
+    height: 100%;
+    z-index: 1;
+    background-color: $blanco;
+    padding-bottom: 2rem;
+
+    .boton-cerrar {
+        display: block;
+        float: right;
+        width: 2rem;
+        margin: auto 1rem auto auto;
+        font-size: 2.8rem;
+    }
+
+    h4 {
+        margin: 2rem 0 0 0;
+    }
+
+    .contenedor-filtros {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        column-gap: 4rem;
+
+        .columna-filtro {
+            margin-bottom: 2rem;
+
+            .lista-filtros {
+
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                .filtro {
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+        @include telefono {
+            flex-direction: column;
+        }
+
+        @include estilo-enlace($azul) {
+            margin-top: auto;
+            margin-bottom: 2rem;
+        }
+
+    }
+}
