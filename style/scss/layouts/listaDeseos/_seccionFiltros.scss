@@ -8,17 +8,15 @@
 }
 
 .seccion-filtros {
-    display: block;
+    display: none;
+    padding-bottom: 2rem;
     margin-bottom: 4rem;
     border-bottom: .1rem solid lighten($gris, 10%);
-    display: none;
     height: 100%;
     z-index: 1;
     background-color: $blanco;
-    padding-bottom: 2rem;
 
     .boton-cerrar {
-        display: block;
         float: right;
         width: 2rem;
         margin: auto 1rem auto auto;
@@ -26,18 +24,16 @@
     }
 
     h4 {
-        margin: 2rem 0 0 0;
+        margin: 0;
     }
 
     .contenedor-filtros {
         display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
+        justify-content: flex-start; // Cambiar esto
         column-gap: 4rem;
+        row-gap: 1rem;
 
         .columna-filtro {
-            margin-bottom: 2rem;
-
             .lista-filtros {
 
                 display: flex;
@@ -54,6 +50,8 @@
 
         @include telefono {
             flex-direction: column;
+            width: 90%;
+            margin: 0 auto;
         }
 
         @include estilo-enlace($azul) {
