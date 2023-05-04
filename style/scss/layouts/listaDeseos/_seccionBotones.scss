@@ -1,0 +1,8 @@
+.seccion-botones {
+    display: block;
+    margin: 2rem auto;
+    padding: 4rem 0;
+    border-top: .1rem solid lighten($gris, 10%);
+    border-bottom: .1rem solid lighten($gris, 10%);
+    @include estilo-enlace($negro);
+}
