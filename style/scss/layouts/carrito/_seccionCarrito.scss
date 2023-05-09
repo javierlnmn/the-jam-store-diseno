@@ -1,0 +1,33 @@
+.seccion-carrito {
+
+    .encabezado-lista-deseos {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+
+        span {
+            height: .1rem;
+            background-color: lighten($gris, 10%);
+            flex: 1;
+        }
+
+        @include desktop {
+            flex-direction: column;
+            gap: 0;
+            align-items: flex-start;
+
+            span {
+                flex: 0;
+            }
+        }
+    }
+
+    @include display-productos(1, 2rem, false);
+
+}
+
+
+.boton-ajustes-busqueda {
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
