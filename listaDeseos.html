@@ -88,14 +88,27 @@
         </section>
 
         <!-- Cambiar esto a seccion de botones-->
-        <section class="seccion-botones contenedor">
-            <a class="enlace_boton" id="boton-ver-filtros">Ver filtros</a>
-            <a class="enlace_boton" id="boton-ordernar-por">Ordenar por</a>
+        <section class="seccion-boton-filtros contenedor">
+            <!-- Icono ajustes -->
+            <svg id="boton-ver-ajustes-busqueda" xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-adjustments-horizontal" width="26" height="26" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="#151515" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="14" cy="6" r="2" />
+                <line x1="4" y1="6" x2="12" y2="6" />
+                <line x1="16" y1="6" x2="20" y2="6" />
+                <circle cx="8" cy="12" r="2" />
+                <line x1="4" y1="12" x2="6" y2="12" />
+                <line x1="10" y1="12" x2="20" y2="12" />
+                <circle cx="17" cy="18" r="2" />
+                <line x1="4" y1="18" x2="15" y2="18" />
+                <line x1="19" y1="18" x2="20" y2="18" />
+            </svg>
         </section>
 
-        <section class="contenedor seccion-filtros">
+        <section class="contenedor seccion-ajustes-busqueda">
 
-            <a class="boton-cerrar" id="boton-cerrar-filtros">&times;</a>
+            <a class="boton-cerrar" id="boton-cerrar-ajustes-busqueda">&times;</a>
 
             <h4 class="titulo-secundario">Filtrar por</h4>
 
@@ -348,21 +361,44 @@
                 </div>
             </div>
 
+            <h4 class="titulo-secundario">Ordenar por</h4>
+
+            <div class="contenedor-filtros">
+                <div class="columna-filtro">
+                    <p class="negrita">Prenda</p>
+                    <ul class="lista-filtros">
+                        <li class="filtro">
+                            <div class="contenedor-boton-radio">
+                                <input class="boton-radio" id="radio1" type="radio" name="ordenar-por"/>
+                            </div>
+                            &nbsp;&nbsp;Recién añadidas
+                        </li>
+                        <li class="filtro">
+                            <div class="contenedor-boton-radio">
+                                <input class="boton-radio" id="radio1" type="radio" name="ordenar-por"/>
+                            </div>
+                            &nbsp;&nbsp;Últimas publicadas
+                        </li>
+                        <li class="filtro">
+                            <div class="contenedor-boton-radio">
+                                <input class="boton-radio" id="radio1" type="radio" name="ordenar-por"/>
+                            </div>
+                            &nbsp;&nbsp;Precio
+                        </li>
+                        <li class="filtro">
+                            <div class="contenedor-boton-radio">
+                                <input class="boton-radio" id="radio1" type="radio" name="ordenar-por"/>
+                            </div>
+                            &nbsp;&nbsp;En Oferta
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
             <div class="botones">
-                <a class="enlace_boton">Aplicar filtros</a>
-                <a class="enlace_boton">Limpiar filtros</a>
+                <a class="enlace_boton">Aplicar</a>
             </div>
 
-        </section>
-
-        <section class="contenedor seccion-ordenar-por">
-            <a class="boton-cerrar" id="boton-cerrar-filtros">&times;</a>
-
-            <h4 class="titulo-secundario">Filtrar por</h4>
-
-            <div class="contenedor-ordenar">
-                
-            </div>
         </section>
 
         <section class="contenedor seccion-lista">

@@ -1,13 +1,13 @@
-let botonVerFiltros = $('#boton-ver-filtros');
-let botonCerrarFiltros = $('#boton-cerrar-filtros');
-let seccionFiltros = $('.seccion-filtros');
+let botonVerAjustesBusqueda = $('#boton-ver-ajustes-busqueda');
+let botonCerrarAjustesBusqueda = $('#boton-cerrar-ajustes-busqueda');
+let seccionAjustesBusqueda = $('.seccion-ajustes-busqueda');
 
-botonVerFiltros.on('click', function () {
-    seccionFiltros.show('fast', function() {
-        seccionFiltros.css('display', 'block');
+botonVerAjustesBusqueda.on('click', function () {
+    seccionAjustesBusqueda.show('fast', function() {
+        seccionAjustesBusqueda.css('display', 'block');
     });
 });
 
-botonCerrarFiltros.on('click', function () {
-    seccionFiltros.hide('fast');
+botonCerrarAjustesBusqueda.on('click', function () {
+    seccionAjustesBusqueda.hide('fast');
 });
