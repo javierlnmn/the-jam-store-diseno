@@ -11,6 +11,8 @@
             background-color: lighten($gris, 20%);
         }
 
+        @include estilo-enlace($negro);
+
         @include telefono {
             span {
                 flex: 0;

@@ -1,5 +1,0 @@
-.seccion-lista-carrito {
-    @include display-productos(1, 2rem, false) {
-        grid-column: 1 / 6;
-    }
-}
