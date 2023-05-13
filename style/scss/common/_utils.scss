@@ -47,7 +47,7 @@
     font-weight: $delgada;
 }
 
-.texto_small {
+.texto-pequeno {
     font-size: 1.3rem;
 }
 
@@ -55,4 +55,12 @@
     text-decoration: line-through;
     color: $gris;
     font-weight: $delgada;
+}
+
+.texto-rojo {
+    color: $rojo;
+}
+
+.texto-verde {
+    color: $verde;
 }

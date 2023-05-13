@@ -24,9 +24,7 @@ let distanciaAnterior = pieCarrito.offset();
 
 $(window).on('scroll', function () {
     let distancia = pieCarrito.offset().top;
-
-    console.log(distancia);
-    console.log(distanciaAnterior);
+    
     if (distancia === distanciaAnterior) {
         pieCarrito.addClass('pie-carrito_sin-sombra');
     } else {
