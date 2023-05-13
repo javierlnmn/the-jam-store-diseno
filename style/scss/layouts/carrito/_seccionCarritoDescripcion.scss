@@ -1,0 +1,36 @@
+.seccion-carrito-descripcion {
+    
+    // CAMBIAR ESTO
+
+    .contenedor {
+
+        display: flex;
+
+        .icono-carrito {
+            height: 50rem;
+            min-width: 50rem;
+            opacity: .4;
+        }
+
+        .informacion {
+            margin-left: -20rem;
+            position: relative;
+            z-index: 1;
+
+            .lista {
+                list-style: none;
+                .elemento-lista {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 1rem;
+                    svg {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @include ondas('carrito');
+}
