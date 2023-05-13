@@ -63,6 +63,8 @@
         @include estilo-enlace($azul) {
             margin-top: auto;
             margin-bottom: 2rem;
+            width: 15rem;
+            text-align: center;
         }
 
         @include telefono {

@@ -14,6 +14,7 @@
 @import 'common/productoCard';
 @import 'common/productoRow';
 @import 'common/bannerOndas';
+@import 'common/seccionProductosRecomendados';
 @import 'common/seccionAjustesBusqueda';
 
 /** Layouts **/
@@ -28,14 +29,14 @@
 @import 'layouts/index/seccionGarantias';
 
 @import 'layouts/articulo/seccionProducto';
-@import 'layouts/articulo/seccionProductosRecomendados';
 @import 'layouts/articulo/seccionValoraciones';
 
 @import 'layouts/listaDeseos/seccionEncabezado';
-@import 'layouts/listaDeseos/seccionLista';
+@import 'layouts/listaDeseos/seccionListaDeseos';
 
 @import 'layouts/carrito/seccionEncabezado';
-@import 'layouts/carrito/seccionCarrito';
+@import 'layouts/carrito/seccionListaCarrito';
+@import 'layouts/carrito/seccionOndas';
 
 @import 'layouts/seccionRopa/seccionRopa';
 
@@ -45,3 +46,4 @@
 
 @import 'layouts/modales/modal';
 @import 'layouts/modales/modalBusqueda';
+@import 'layouts/modales/modalVaciarCarrito';

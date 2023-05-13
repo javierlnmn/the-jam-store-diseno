@@ -1,0 +1,45 @@
+.modal .modal-vaciar-carrito-contenido {
+
+    background-color: $blanco;
+    margin: auto;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    width: 80%;  
+    max-width: 120rem;  
+    border-radius: .5rem;
+
+    @include tablet {
+        width: 90%;
+    }
+    
+    .botones {
+        display: flex;
+        gap: 2rem;
+        @include estilo-enlace($negro) {
+            width: 8rem;
+            text-align: center;
+        }
+        .enlace-rojo {
+            display: grid;
+            place-items: center;
+            @include estilo-enlace($rojo);
+        }
+        
+    }
+
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 2.8rem;
+        font-weight: regular;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+   
+}
