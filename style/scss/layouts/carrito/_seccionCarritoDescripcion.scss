@@ -1,36 +1,30 @@
 .seccion-carrito-descripcion {
-    
-    // CAMBIAR ESTO
 
-    .contenedor {
+    .contenedor-informacion {
 
-        display: flex;
+        max-width: 90rem;
 
-        .icono-carrito {
-            height: 50rem;
-            min-width: 50rem;
-            opacity: .4;
-        }
+        .lista {
 
-        .informacion {
-            margin-left: -20rem;
-            position: relative;
-            z-index: 1;
+            list-style: none;
 
-            .lista {
-                list-style: none;
-                .elemento-lista {
-                    display: flex;
-                    align-items: flex-start;
-                    gap: 1rem;
-                    svg {
-                        width: 2rem;
-                        height: 2rem;
-                    }
+            .elemento-lista {
+
+                display: flex;
+                align-items: flex-start;
+                gap: 1rem;
+
+                svg {
+                    margin-top: .4rem;
+                    min-width: 2rem;
+                    max-width: 2rem;
+                    min-height: 2rem;
+                    max-height: 2rem;
                 }
+
             }
         }
     }
-
-    @include ondas('carrito');
 }
+
+@include ondas('carrito');

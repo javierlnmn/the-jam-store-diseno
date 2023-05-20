@@ -22,6 +22,16 @@ $(document).on('keydown', function (event) {
 let pieCarrito = $('.pie-carrito');
 let distanciaAnterior = pieCarrito.offset();
 
+$(document).ready(function() {
+    let distancia = pieCarrito.offset().top;
+    
+    if (distancia === distanciaAnterior) {
+        pieCarrito.addClass('pie-carrito_sin-sombra');
+    } else {
+        pieCarrito.removeClass('pie-carrito_sin-sombra');
+    }
+});
+
 $(window).on('scroll', function () {
     let distancia = pieCarrito.offset().top;
     
