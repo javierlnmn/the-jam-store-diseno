@@ -1,17 +1,5 @@
 .modal .modal-vaciar-carrito-contenido {
 
-    background-color: $blanco;
-    margin: auto;
-    margin-bottom: 3rem;
-    padding: 2rem;
-    width: 80%;  
-    max-width: 120rem;  
-    border-radius: .5rem;
-
-    @include tablet {
-        width: 90%;
-    }
-    
     .botones {
         display: flex;
         gap: 2rem;

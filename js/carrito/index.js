@@ -32,6 +32,19 @@ $(document).ready(function() {
     }
 });
 
+$(window).on('resize', function () {
+    let distancia = pieCarrito.offset().top;
+    
+    if (distancia === distanciaAnterior) {
+        pieCarrito.addClass('pie-carrito_sin-sombra');
+    } else {
+        pieCarrito.removeClass('pie-carrito_sin-sombra');
+    }
+
+    distanciaAnterior = distancia;
+});
+
+
 $(window).on('scroll', function () {
     let distancia = pieCarrito.offset().top;
     

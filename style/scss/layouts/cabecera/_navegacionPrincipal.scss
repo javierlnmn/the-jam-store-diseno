@@ -4,12 +4,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 4rem;
 
         .opcion-menu {
             min-height: 100%;
             display: flex;
             align-items: center;
-            padding: 0 2rem;
 
             @include estilo-enlace($negro);
 
@@ -24,6 +24,10 @@
             }
 
             
+        }
+
+        @include tablet {
+            gap: 2rem;
         }
 
         @include telefono {

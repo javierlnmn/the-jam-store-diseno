@@ -73,9 +73,8 @@ h4 {
 
 p {
     font-size: 1.8rem;
+
     @include telefono {
         font-size: 1.7rem;
     }
 }
-
-

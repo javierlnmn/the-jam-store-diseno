@@ -82,20 +82,40 @@ function letterAnimation(el, cls) {
 
 // Desplegar el modal de busqueda
 
-let modal = $('#modal-busqueda');
+let modalBusqueda = $('#modal-busqueda');
 
 $('#boton-busqueda').on('click', function () {
-    modal.show();
+    modalBusqueda.show();
     $('body').css('overflow', 'hidden');
 });
 
 $('#boton-cerrar-modal').on('click', function () {
-    modal.hide();
+    modalBusqueda.hide();
     $('body').css('overflow', 'auto');
 });
 
 $(document).on('keydown', function (event) {
-    if (event.keyCode == 27) /* 27 == ESC */ modal.hide();
+    if (event.keyCode == 27) /* 27 == ESC */ modalBusqueda.hide();
+    $('body').css('overflow', 'auto');
+});
+
+
+// Desplegar el modal de inicio de sesion
+
+let modalInicioSesion = $('#modal-inicio-sesion');
+
+$('#boton-inicio-sesion').on('click', function () {
+    modalInicioSesion.show();
+    $('body').css('overflow', 'hidden');
+});
+
+$('#boton-cerrar-modal').on('click', function () {
+    modalInicioSesion.hide();
+    $('body').css('overflow', 'auto');
+});
+
+$(document).on('keydown', function (event) {
+    if (event.keyCode == 27) /* 27 == ESC */ modalInicioSesion.hide();
     $('body').css('overflow', 'auto');
 });
 

@@ -13,4 +13,39 @@
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
 
+    .modal-contenido {
+        background-color: $blanco;
+        margin: auto;
+        margin-bottom: 3rem;
+        padding: 2rem;
+        width: 80%;
+        max-width: 120rem;
+        border-radius: .5rem;
+
+        @include tablet {
+            min-width: auto;
+            width: 90%;
+        }
+
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 2.8rem;
+            font-weight: $regular;
+            height: 2rem;
+            width: 2rem;
+            margin-top: -1rem;
+            margin-right: -.5rem;
+            text-align: center;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+    }
+
 }
