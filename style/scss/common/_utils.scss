@@ -64,3 +64,13 @@
 .texto-verde {
     color: $verde;
 }
+
+.input {
+    padding: 10px;
+    background-color: $blanco;
+    color: $negro;
+    border: 1px solid $gris;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
