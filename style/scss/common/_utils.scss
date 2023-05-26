@@ -12,9 +12,11 @@
     font-weight: $black;
     color: $negro;
     font-size: 4.2rem;
+
     @include telefono {
         font-size: 3.8rem;
     }
+
     text-align: center;
     text-transform: uppercase;
 }
@@ -24,9 +26,9 @@
     color: $negro;
     text-align: left;
     text-transform: uppercase;
-    
+
     @include tablet {
-        text-align: center ;
+        text-align: center;
     }
 }
 
@@ -63,14 +65,4 @@
 
 .texto-verde {
     color: $verde;
-}
-
-.input {
-    padding: 10px;
-    background-color: $blanco;
-    color: $negro;
-    border: 1px solid $gris;
-    border-radius: 5px;
-    outline: none;
-    font-size: 14px;
 }

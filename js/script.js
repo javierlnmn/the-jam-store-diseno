@@ -173,18 +173,18 @@ botonCerrarAjustesBusqueda.on('click', function () {
 
 $(".input-login").each(function () {
     if ($(this).val() != "") {
-        $(this).parent().addClass("animation");
+        $(this).parent().addClass("contenedor-input-texto_animacion");
     }
 });
 
 //Add animation when input is focused
 $(".login-input").focus(function () {
-    $(this).parent().addClass("animation animation-color");
+    $(this).parent().addClass("contenedor-input-texto_animacion contenedor-input-texto_animacion-color");
 });
 
 //Remove animation(s) when input is no longer focused
 $(".login-input").focusout(function () {
     if ($(this).val() === "")
-        $(this).parent().removeClass("animation");
-    $(this).parent().removeClass("animation-color");
+        $(this).parent().removeClass("contenedor-input-texto_animacion");
+    $(this).parent().removeClass("contenedor-input-texto_animacion-color");
 })

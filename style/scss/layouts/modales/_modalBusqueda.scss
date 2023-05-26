@@ -1,4 +1,6 @@
 .modal .modal-busqueda-contenido {
+    
+    padding-top: 3rem;
 
     @include tablet {
         .cuadro-busqueda svg {
@@ -46,9 +48,11 @@
         .titulo-lista {
             font-size: 2rem;
             font-weight: $bold;
+            margin-top: 2rem;
         }
         .elemento-lista {
             padding: 1rem;
+            padding-left: .4rem;
             &+.elemento-lista {
                 border-top: .1rem solid $gris;
             }
