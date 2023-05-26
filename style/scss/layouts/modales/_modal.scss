@@ -20,7 +20,7 @@
         padding: 2rem;
         width: 80%;
         max-width: 120rem;
-        border-radius: .5rem;
+        border: .1rem solid $gris;
 
         @include tablet {
             min-width: auto;

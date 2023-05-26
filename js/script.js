@@ -160,7 +160,7 @@ let botonCerrarAjustesBusqueda = $('#boton-cerrar-ajustes-busqueda');
 let seccionAjustesBusqueda = $('.seccion-ajustes-busqueda');
 
 botonVerAjustesBusqueda.on('click', function () {
-    seccionAjustesBusqueda.show('fast', function() {
+    seccionAjustesBusqueda.show('fast', function () {
         seccionAjustesBusqueda.css('display', 'block');
     });
 });
@@ -168,3 +168,23 @@ botonVerAjustesBusqueda.on('click', function () {
 botonCerrarAjustesBusqueda.on('click', function () {
     seccionAjustesBusqueda.hide('fast');
 });
+
+// Estilo de los text input
+
+$(".input-login").each(function () {
+    if ($(this).val() != "") {
+        $(this).parent().addClass("animation");
+    }
+});
+
+//Add animation when input is focused
+$(".login-input").focus(function () {
+    $(this).parent().addClass("animation animation-color");
+});
+
+//Remove animation(s) when input is no longer focused
+$(".login-input").focusout(function () {
+    if ($(this).val() === "")
+        $(this).parent().removeClass("animation");
+    $(this).parent().removeClass("animation-color");
+})
