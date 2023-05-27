@@ -1,5 +1,8 @@
 .modal .modal-busqueda-contenido {
     
+    width: 90%;
+    max-width: 90rem;
+    min-width: 32rem;
     padding-top: 3rem;
 
     @include tablet {

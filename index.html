@@ -307,7 +307,7 @@
 
         <div class="modal-contenido modal-busqueda-contenido">
 
-            <span id="boton-cerrar-modal" class="close">&times;</span>
+            <span id="boton-cerrar-modal-busqueda" class="close">&times;</span>
 
             <div class="cuadro-busqueda">
                 <svg width="24" height="24" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -415,19 +415,31 @@
 
         <div class="modal-contenido modal-inicio-sesion-contenido">
 
-            <span id="boton-cerrar-modal" class="close">&times;</span>
+            <span id="boton-cerrar-modal-inicio-sesion" class="close">&times;</span>
+
+            <h4>Te echábamos de menos</h4>
+
+            <p class="texto-secundario">Inicia sesión con tu nombre de usuario y contraseña</p>
 
             <div class="contenedor-formulario">
+                
                 <form action="" class="formulario">
                     <div class="contenedor-input-texto">
-                        <input type="text" id="input-buscar" class="login-input" />
+                        <input type="text" class="login-input" />
                         <label for="input-buscar" unselectable="on">Usuario</label>
                     </div>
-                    <div class="input-container">
-                        <input type="text" id="input-buscar" class="login-input" />
+                    <div class="contenedor-input-texto">
+                        <input type="password" class="login-input" />
                         <label for="input-buscar" unselectable="on">Contraseña</label>
                     </div>
+                    <input type="submit" class="enlace_boton" value="Iniciar sesión">
                 </form>
+
+                <div class="enlaces">
+                    <a href="#" class="enlace">¿Has olvidado tu contraseña?</a>
+                    <a href="#" class="enlace">¿No tienes una cuenta?</a>
+                </div>
+
             </div>
 
         </div>

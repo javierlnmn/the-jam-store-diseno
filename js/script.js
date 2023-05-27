@@ -89,14 +89,16 @@ $('#boton-busqueda').on('click', function () {
     $('body').css('overflow', 'hidden');
 });
 
-$('#boton-cerrar-modal').on('click', function () {
+$('#boton-cerrar-modal-busqueda').on('click', function () {
     modalBusqueda.hide();
     $('body').css('overflow', 'auto');
 });
 
 $(document).on('keydown', function (event) {
-    if (event.keyCode == 27) /* 27 == ESC */ modalBusqueda.hide();
-    $('body').css('overflow', 'auto');
+    if (event.keyCode == 27) /* 27 == ESC */ {
+        modalBusqueda.hide();
+        $('body').css('overflow', 'auto');
+    }
 });
 
 
@@ -109,14 +111,16 @@ $('#boton-inicio-sesion').on('click', function () {
     $('body').css('overflow', 'hidden');
 });
 
-$('#boton-cerrar-modal').on('click', function () {
+$('#boton-cerrar-modal-inicio-sesion').on('click', function () {
     modalInicioSesion.hide();
     $('body').css('overflow', 'auto');
 });
 
 $(document).on('keydown', function (event) {
-    if (event.keyCode == 27) /* 27 == ESC */ modalInicioSesion.hide();
-    $('body').css('overflow', 'auto');
+    if (event.keyCode == 27) /* 27 == ESC */ {
+        modalInicioSesion.hide();
+        $('body').css('overflow', 'auto');
+    }
 });
 
 // Funcionalidad input de numero de productos

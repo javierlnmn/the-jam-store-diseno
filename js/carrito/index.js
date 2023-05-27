@@ -13,8 +13,10 @@ $('#boton-cerrar-modal-vaciar-carrito').on('click', function () {
 });
 
 $(document).on('keydown', function (event) {
-    if (event.keyCode == 27) /* 27 == ESC */ modalVaciarCarrito.hide();
-    $('body').css('overflow', 'auto');
+    if (event.keyCode == 27) /* 27 == ESC */ {
+        modalVaciarCarrito.hide();
+        $('body').css('overflow', 'auto');
+    }
 });
 
 // Quitar sombra del banner del precio
@@ -22,9 +24,9 @@ $(document).on('keydown', function (event) {
 let pieCarrito = $('.pie-carrito');
 let distanciaAnterior = pieCarrito.offset();
 
-$(document).ready(function() {
+$(document).ready(function () {
     let distancia = pieCarrito.offset().top;
-    
+
     if (distancia === distanciaAnterior) {
         pieCarrito.addClass('pie-carrito_sin-sombra');
     } else {
@@ -34,7 +36,7 @@ $(document).ready(function() {
 
 $(window).on('resize', function () {
     let distancia = pieCarrito.offset().top;
-    
+
     if (distancia === distanciaAnterior) {
         pieCarrito.addClass('pie-carrito_sin-sombra');
     } else {
@@ -47,7 +49,7 @@ $(window).on('resize', function () {
 
 $(window).on('scroll', function () {
     let distancia = pieCarrito.offset().top;
-    
+
     if (distancia === distanciaAnterior) {
         pieCarrito.addClass('pie-carrito_sin-sombra');
     } else {

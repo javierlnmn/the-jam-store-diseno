@@ -3,7 +3,7 @@
     display: none;
     position: fixed;
     z-index: 3;
-    padding-top: 10rem;
+    padding-top: 9rem;
     left: 0;
     top: 0;
     width: 100%;
@@ -17,9 +17,8 @@
         margin: auto;
         margin-bottom: 3rem;
         padding: 2rem;
-        width: 80%;
-        max-width: 120rem;
         border: .1rem solid $gris;
+        position: relative;
 
         @include tablet {
             min-width: auto;
@@ -28,15 +27,10 @@
 
         .close {
             color: $gris;
-            float: right;
             font-size: 2.8rem;
-            font-weight: $regular;
-            height: 2rem;
-            width: 2rem;
-            margin-top: -1rem;
-            margin-right: -.5rem;
-            margin-left: 2rem;
-            text-align: center;
+            line-height: 2.8rem;
+            margin: -.5rem -.5rem 0 0;
+            float: right;
         }
 
         .close:hover,
