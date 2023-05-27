@@ -19,10 +19,30 @@ $(document).on('keydown', function (event) {
     }
 });
 
-// Quitar sombra del banner del precio
+// Banner del precio no sticky para altura de ventana menor de 1350px
+
 
 let pieCarrito = $('.pie-carrito');
 let distanciaAnterior = pieCarrito.offset();
+
+$(document).ready(function () {
+    if($(window).height() < 1300) {
+        pieCarrito.css('position', 'static');
+    } else {
+        pieCarrito.css('position', null);
+    }
+});
+
+$(window).on('resize', function() {
+    if($(window).height() < 1300) {
+        pieCarrito.css('position', 'static');
+    } else {
+        pieCarrito.css('position', null);
+    }
+});
+
+
+// Quitar sombra del banner del precio
 
 $(document).ready(function () {
     let distancia = pieCarrito.offset().top;
