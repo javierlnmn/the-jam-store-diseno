@@ -26,18 +26,18 @@ let pieCarrito = $('.pie-carrito');
 let distanciaAnterior = pieCarrito.offset();
 
 $(document).ready(function () {
-    if($(window).height() < 1300) {
+    if($(window).height() < 890) {
         pieCarrito.css('position', 'static');
     } else {
-        pieCarrito.css('position', null);
+        pieCarrito.removeAttr('style');
     }
 });
 
 $(window).on('resize', function() {
-    if($(window).height() < 1300) {
+    if($(window).height() < 890) {
         pieCarrito.css('position', 'static');
     } else {
-        pieCarrito.css('position', null);
+        pieCarrito.removeAttr('style');
     }
 });
 
