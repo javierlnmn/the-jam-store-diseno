@@ -31,7 +31,9 @@
             font-weight: $regular-bold;
         }
 
-        .numero-articulos {
+        .seleccion-producto {
+            display: flex;
+            gap: 1rem;
             margin-bottom: 2rem;
         }
     
