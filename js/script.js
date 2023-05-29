@@ -104,21 +104,21 @@ $(document).on('keydown', function (event) {
 
 // Desplegar el modal de inicio de sesion
 
-let modalInicioSesion = $('#modal-usuario');
+let modalUsuario = $('#modal-usuario');
 
 $('#boton-usuario').on('click', function () {
-    modalInicioSesion.show();
+    modalUsuario.show();
     $('body').css('overflow', 'hidden');
 });
 
 $('#boton-cerrar-modal-usuario').on('click', function () {
-    modalInicioSesion.hide();
+    modalUsuario.hide();
     $('body').css('overflow', 'auto');
 });
 
 $(document).on('keydown', function (event) {
     if (event.keyCode == 27) /* 27 == ESC */ {
-        modalInicioSesion.hide();
+        modalUsuario.hide();
         $('body').css('overflow', 'auto');
     }
 });
@@ -192,3 +192,30 @@ $(".login-input").focusout(function () {
         $(this).parent().removeClass("contenedor-input-texto_animacion");
     $(this).parent().removeClass("contenedor-input-texto_animacion-color");
 })
+
+// Intercambiar entre modales de inicio de sesión y de registro
+
+let modalUsuarioInicioSesion = $('#modal-usuario_inicio-sesion');
+let modalUsuarioRegistro = $('#modal-usuario_registro');
+
+let botonVerFormularioRegistro = $('#boton-formulario-registro');
+let botonVerFormularioInicioSesion = $('#boton-formulario-inicio-sesion');
+
+botonVerFormularioRegistro.on('click', function() {
+    console.log('click');
+    modalUsuarioInicioSesion.hide();
+    modalUsuarioRegistro.show();
+});
+
+botonVerFormularioInicioSesion.on('click', function() {
+    modalUsuarioRegistro.hide();
+    modalUsuarioInicioSesion.show();
+});
+
+// Hacer que los mensajes de popup desaparezcan tras unos segundos
+
+let contenedorMensajesPopup = $('.contenedor-mensajes-popup') 
+
+setTimeout(function() {
+    contenedorMensajesPopup.fadeOut(2000);
+}, 2500);

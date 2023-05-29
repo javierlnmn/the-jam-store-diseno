@@ -415,7 +415,7 @@
 
     <div id="modal-usuario" class="modal">
 
-        <div class="modal-contenido modal-usuario-contenido">
+        <div class="modal-contenido modal-usuario-contenido" id="modal-usuario_inicio-sesion">
 
             <span id="boton-cerrar-modal-usuario" class="close">&times;</span>
 
@@ -439,19 +439,58 @@
 
                 <div class="enlaces">
                     <a href="#" class="enlace">¿Has olvidado tu contraseña?</a>
-                    <a href="#" class="enlace">¿No tienes una cuenta?</a>
+                    <a href="#" class="enlace" id="boton-formulario-registro">¿No tienes una cuenta?</a>
                 </div>
 
             </div>
 
-            <a href="" class="enlace_boton">Cerrar Sesión</a>
-            <a href="" class="enlace_boton">Ver Perfil</a>
+        </div>
+
+        <div class="modal-contenido modal-usuario-contenido" id="modal-usuario_registro" style="display: none;">
+
+            <span id="boton-cerrar-modal-usuario" class="close">&times;</span>
+
+            <h4>Regístrate</h4>
+
+            <div class="contenedor-formulario">
+                
+                <form action="" class="formulario">
+                    <div class="contenedor-input-texto">
+                        <input type="text" class="login-input" />
+                        <label for="input-buscar" unselectable="on">Usuario</label>
+                    </div>
+                    <div class="contenedor-input-texto">
+                        <input type="text" class="login-input" />
+                        <label for="input-buscar" unselectable="on">Email</label>
+                    </div>
+                    <div class="contenedor-input-texto">
+                        <input type="password" class="login-input" />
+                        <label for="input-buscar" unselectable="on">Contraseña</label>
+                    </div>
+                    <input type="submit" class="enlace_boton" value="Regístrame">
+                </form>
+
+                <div class="enlaces">
+                    <a href="#" class="enlace" id="boton-formulario-inicio-sesion">¿Ya tienes una cuenta?</a>
+                </div>
+
+            </div>
 
         </div>
 
     </div>
 
+    <div class="contenedor-mensajes-popup">
+        <div class="mensaje-popup error">
+            <p>¡Vaya, ha habido un error al intentar el registro!</p>
+        </div>
+
+        <div class="mensaje-popup exito">
+            <p>¡Nice!</p>
+        </div>
     </div>
+
+    
 
     <script type="text/javascript" src="js/gsap.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
