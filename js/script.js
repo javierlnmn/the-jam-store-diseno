@@ -104,14 +104,14 @@ $(document).on('keydown', function (event) {
 
 // Desplegar el modal de inicio de sesion
 
-let modalInicioSesion = $('#modal-inicio-sesion');
+let modalInicioSesion = $('#modal-usuario');
 
-$('#boton-inicio-sesion').on('click', function () {
+$('#boton-usuario').on('click', function () {
     modalInicioSesion.show();
     $('body').css('overflow', 'hidden');
 });
 
-$('#boton-cerrar-modal-inicio-sesion').on('click', function () {
+$('#boton-cerrar-modal-usuario').on('click', function () {
     modalInicioSesion.hide();
     $('body').css('overflow', 'auto');
 });
