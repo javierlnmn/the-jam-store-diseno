@@ -49,7 +49,10 @@ $altura-paginacion: 5rem;
 
                 &.actual {
                     background-color: $azul;
-                    color: $blanco;
+                    a{
+                        color: $blanco;
+                    }
+
 
                     &:hover {
                         background-color: darken($azul, 4%);
