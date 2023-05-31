@@ -25,16 +25,18 @@ $altura-paginacion: 5rem;
 
         &.desactivado {
             background-color: rgba($gris, .05);
-            color: $gris;
             border-color: rgba($gris, .4);
 
             & .contenedor-boton {
                 &:hover {
-                    background-color: inherit !important;
+                    background-color: inherit;
                     cursor: default !important;
                 }
                 &+.contenedor-boton {
                     border-color: rgba($gris, .4) !important;
+                }
+                .boton {
+                    color: $gris;
                 }
             }
         }
