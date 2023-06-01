@@ -185,21 +185,75 @@
 
             <div class="ondas"></div>
 
-            <div class="contenedor">
+            <div class="contenedor contenedor-anadir-valoracion">
+
+                <h4 class="titulo-secundario">¡Danos tu opinión!</h4>
+
+                <form action="" method="post" class="formulario-valoracion">
+
+                    <div class="contenedor-input-texto contenedor-input-texto_textarea">
+                        <textarea type="text" id="input-buscar" class="login-input"></textarea>
+                        <label for="input-buscar" unselectable="on">Escribe aquí tu opinión</label>
+                    </div>
+                
+                    <div class="contenedor-doble">
+                        
+                        <div class="contenedor-input-estrellas">
+
+                            <p class="texto-secundario">Valora el producto</p>
+                            <div class="valoracion">
+
+                                <input class="input-valoracion" type="radio" id="estrella5" name="valoracion" value="5" />
+                                <label class="estrella" for="estrella5">
+                                </label>
+                                
+                                <input class="input-valoracion" type="radio" id="estrella4" name="valoracion" value="4" />
+                                <label class="estrella" for="estrella4">
+                                </label>
+                        
+                                <input class="input-valoracion" type="radio" id="estrella3" name="valoracion" value="3" />
+                                <label class="estrella" for="estrella3">
+                                </label>
+                        
+                                <input class="input-valoracion" type="radio" id="estrella2" name="valoracion" value="2" />
+                                <label class="estrella" for="estrella2">
+                                </label>
+                        
+                                <input class="input-valoracion" type="radio" id="estrella1" name="valoracion" value="1" />
+                                <label class="estrella" for="estrella1">
+                                </label>
+                        
+                                <script src="js/font-awesome.min.js"></script>
+                        
+                            </div>
+                        </div>
+                        
+                        <button class="enlace_boton" type="submit">Publicar Valoración</button>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="contenedor contenedor-valoraciones">
                 <h3 class="titulo-secundario">Opiniones del producto</h3>
+
                 <p class="texto-secundario">Mostrando 2 valoraciones de 8 - Orden: más destacadas</p>
 
-                <div class="valoraciones contenedor">
+                <div class="valoraciones">
 
                     <div class="valoracion">
                         <div class="informacion-valoracion">
                             <div class="usuario">
                                 <img class="foto-perfil" src="media/img/usuario.webp" alt="">
                                 <p>Diego Linares Gutiérrez</p>
-                                <div class="puntuacion">
-                                    <p>4.7</p>
-                                    <img src="media/img/estrella.png" alt="">
+                            </div>
+                            <div class="puntuacion">
+                                <div class="estrellas">
+                                    <span class="estrella"></span>
+                                    <span class="estrella"></span>
+                                    <span class="estrella"></span>
                                 </div>
+                                <div class="texto-secundario">Bueno</div>
                             </div>
                             <p>Qui eiusmod non qui duis exercitation exercitation nisi. Velit reprehenderit proident
                                 dolore culpa culpa incididunt aute voluptate eiusmod tempor proident est tempor dolore.
@@ -217,12 +271,18 @@
                             <div class="usuario">
                                 <img class="foto-perfil" src="media/img/usuario.webp" alt="">
                                 <p>Diego Linares Gutiérrez</p>
-                                <div class="puntuacion">
-                                    <p>4.7</p>
-                                    <img src="media/img/estrella.png" alt="">
-                                </div>
                             </div>
-                            <p>Cupidatat ex cillum in duis esse dolore. Eu aliquip irure
+                            <div class="puntuacion">
+                                <div class="estrellas">
+                                    <span class="estrella"></span>
+                                    <span class="estrella"></span>
+                                    <span class="estrella"></span>
+                                    <span class="estrella"></span>
+                                </div>
+                                <div class="texto-secundario">Muy Bueno</div>
+                            </div>
+                            <p class="comentario">
+                                Cupidatat ex cillum in duis esse dolore. Eu aliquip irure
                                 pariatur eu cillum consequat enim enim elit consequat culpa incididunt non eiusmod.
                                 Pariatur consectetur deserunt sit laborum ut occaecat dolore in labore excepteur
                                 ullamco. Esse quis nisi aliqua nostrud elit reprehenderit mollit id id. Ut magna nostrud
