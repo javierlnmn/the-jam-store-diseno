@@ -85,6 +85,7 @@ function letterAnimation(el, cls) {
 let modalBusqueda = $('#modal-busqueda');
 
 $('#boton-busqueda').on('click', function () {
+    console.log(modalBusqueda);
     modalBusqueda.show();
     $('body').css('overflow', 'hidden');
 });
@@ -101,24 +102,31 @@ $(document).on('keydown', function (event) {
     }
 });
 
+// Buscar producto al hacer click en el icono (svg) de buscar
 
-// Desplegar el modal de inicio de sesion
+let formularioBusqueda = $('#formulario-busqueda');
 
-let modalUsuario = $('#modal-usuario');
+$('#boton-buscar').on('click', function(){
+    formularioBusqueda.submit();
+});
+
+// Desplegar el modal de usuario
+
+let modalInicioSesion = $('#modal-usuario');
 
 $('#boton-usuario').on('click', function () {
-    modalUsuario.show();
+    modalInicioSesion.show();
     $('body').css('overflow', 'hidden');
 });
 
-$('#boton-cerrar-modal-usuario').on('click', function () {
-    modalUsuario.hide();
+$('.boton-cerrar-modal-usuario').on('click', function () {
+    modalInicioSesion.hide();
     $('body').css('overflow', 'auto');
 });
 
 $(document).on('keydown', function (event) {
     if (event.keyCode == 27) /* 27 == ESC */ {
-        modalUsuario.hide();
+        modalInicioSesion.hide();
         $('body').css('overflow', 'auto');
     }
 });
@@ -181,13 +189,9 @@ $(".input-login").each(function () {
     }
 });
 
-//Add animation when input is focused
-
 $(".login-input").focus(function () {
     $(this).parent().addClass("contenedor-input-texto_animacion contenedor-input-texto_animacion-color");
 });
-
-//Remove animation(s) when input is no longer focused
 
 $(".login-input").focusout(function () {
     if ($(this).val() === "")
